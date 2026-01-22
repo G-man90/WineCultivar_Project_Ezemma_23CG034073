@@ -2,5 +2,5 @@ Name: Greatman Ezemma
 Matric Number: 23CG034073
 Machine Learning Algorithm Used: Support Vector Machine (SVM)
 Model Persistence Method Used: Joblib
-Live URL: https://your-app-name.onrender.com
+Live URL: https://winecultivar-project-ezemma-23cg034073.onrender.com
 GitHub Repository Link: https://github.com/G-man90/WineCultivar_Project_Ezemma_23CG034073
