@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wine Cultivar Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Wine Cultivar Prediction System</h2>
+
+    <form method="POST">
+        <input type="number" step="any" name="alcohol" placeholder="Alcohol" required>
+        <input type="number" step="any" name="malic_acid" placeholder="Malic Acid" required>
+        <input type="number" step="any" name="ash" placeholder="Ash" required>
+        <input type="number" step="any" name="alcalinity" placeholder="Alcalinity of Ash" required>
+        <input type="number" step="any" name="phenols" placeholder="Total Phenols" required>
+        <input type="number" step="any" name="color" placeholder="Color Intensity" required>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <div class="result">
+            Prediction: {{ prediction }}
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
